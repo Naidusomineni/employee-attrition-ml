@@ -1,0 +1,12 @@
+<h2>Employee Attrition Predictor</h2>
+
+<form method="POST">
+Age: <input name="age"><br>
+Salary: <input name="salary"><br>
+Years: <input name="years"><br>
+<button type="submit">Predict</button>
+</form>
+
+{% if prediction %}
+<h3>Result: {{ prediction }}</h3>
+{% endif %}
